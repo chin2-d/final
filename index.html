@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>MINE...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('images/we.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 70px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(2, 2, 2);
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(211, 190, 190, 0.7);
+        }
+
+        .buttons-container {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons-container button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgba(231, 15, 15, 0.8);
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons-container button:hover {
+            background-color: #ddd;
+        }
+
+        .gallery {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .gallery button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: rgb(12, 11, 11);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="text-overlay">HELLO...FUTURE WIFE🤗💘
+        <br>--BANNU--<P style="font-size:medium; white-space: pre;">
+        <b>B – Brighter than the morning sun</b>, bringing warmth to my soul.
+        <b>A – Always</b> in my heart, no matter the distance.
+        <b>N – Nestled</b> in my soul, where you will forever stay.
+        <b>N – Never-ending</b> memories,Deeply connected to real moments.
+        <b>U – Unbreakable bond</b>, written in the stars.
+        <b>Bannu, you are my story, my love, my forever. ❤️</b>
+        From the day we met in 2021, our story began.
+        By 2022, our hearts were deeply connected with a love that felt true and unbreakable.
+        In 2022-nov-29, we finally erased the distance—our eyes met, our hands touched, and time stood still in that perfect moment.
+        Then came 2024-nov-16, our last meeting—both beautiful and heartbreaking
+Bannu, you will always be my greatest love—you will forever be the love of my life
+<b>bannu, you are the best—my forever, my always, my once-in-a-lifetime.❤️</b><br>
+         <b>           ...I LOVED YOU MORE , IAM LOVING YOU MORE , AND I WILL LOVE YOU MORE--.....</b><br>
+         <b>YOU ARE MY BEGINNING</b>
+         <b>YOU ARE MY MIDDLE</b>
+         <b>YOU ARE MY ENDING</b><br>
+         <b> PLAY THIS SONG and click these 5  buttons one after the other by closing each button after seen</b> </P>
+        </div>
+    
+        <div class="buttons-container">
+            <audio controls style="width: 200px;">
+            <source src="images/sarada.mp3  " type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+            <button onclick="showGallery(1)"><b>WE</b></button>
+            <button onclick="showGallery(2)"><b>TRAVELLED</b></button>
+            <button onclick="showGallery(3)"><b>BIRTHDAY</b></button>
+            <button onclick="showGallery(4)"><b>GIFTS</b></button>
+            <button onclick="showGallery(5)"><b>DREAMED OF</b></button>
+        </div>
+    </div>
+
+    <div id="gallery1" class="gallery">
+    
+        <BR>
+        <p><b>I LOVE YOU BANNU🤩</b> <br> scroll down then come up and close the button at top</p>
+        <img src="images/we/g1_1.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g1_2.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g16.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g3.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g5.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g6.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g7.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g8.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g9.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g10.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g11.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g12.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g13.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g14.jpg" alt="Gallery 1 Image 1">
+        <img src="images/we/g15.jpg" alt="Gallery 1 Image 1">
+        <br>
+        <button onclick="closeGallery(1)">Close</button>
+    </div>
+
+    <div id="gallery2" class="gallery">
+        <button onclick="closeGallery(2)">Close</button>
+        <P><B>PLACES VISITED </B></P>
+        <img src="images/travelled/g13.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g1.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g2.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g3.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g4.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g5.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g6.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g7.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g8.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g9.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g10.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g11.jpg" alt="Gallery 1 Image 1">
+        <img src="images/travelled/g12.jpg" alt="Gallery 1 Image 1">
+        <button onclick="closeGallery(2)">Close</button>
+    </div>
+
+    <div id="gallery3" class="gallery">
+        <button onclick="closeGallery(3)">Close</button>
+        <BR>
+            <B>MY FAV DAY TILL THE DATE</B>
+        <img src="images/birtday/g11.jpg" alt="Gallery 4 Image 1">
+        <img src="images/birtday/g1.jpg" alt="Gallery 4 Image 2">
+        <img src="images/birtday/g2.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g3.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g4.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g5.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g6.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g7.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g8.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g9.jpg" alt="Gallery 4 Image 3">
+        <img src="images/birtday/g10.jpg" alt="Gallery 4 Image 3">
+        <button onclick="closeGallery(3)">Close</button>
+    </div>
+
+    <div id="gallery4" class="gallery">
+        <button onclick="closeGallery(4)">Close</button>
+        <br>
+        <p><b>GIFTS LONG LASTING MEMORIES </b></p>
+        <img src="images/gifts/g_1.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g1.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g2.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g3.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g4.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g5.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g6.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g7.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g8.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g9.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g10.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g11.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g12.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g13.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g14.jpg" alt="Gallery 2 Image 1">
+        <img src="images/gifts/g15.jpg" alt="Gallery 2 Image 1">
+        <button onclick="closeGallery(4)">Close</button>
+    </div>
+    <div id="gallery5" class="gallery">
+        <button onclick="closeGallery(5)">Close</button>
+        <br>
+        <p><B>MY INTENTIONS ON YOU</B><br>
+            Hi kanna,
+            em cheppalo telvadh , etla cheppalo telvadh . 1st tym nuv lockdown lo thaagi call matladinappude neek 
+     padipoyina ne. Naatho kuda matladuthara , nannu kuda choosthara ani agam ayina. Frindship tho start ayina 
+     eppudu love chesavo teleedhu , naaku kuda ammailu paduthara ani nannu nen vandha sarlu chuskunna .
+     nen communication lo average , physically average , andham ledhu , studies lo avetrage , life lo average . naalanti 
+     average gaadi life bright gaa avthundghi chesthunnav ane lope sudden ga vadhilesav. 2minths narakam 
+     lo unchinattu undhi. Naak nuv dorakademo goppa , kaaani nuv ala kaadhe you deserve better , andham 
+     chadhuvu , family anni bagunnai. first time nuv pelli anapude nen pillalu vaatiki beyond vellipoyina , idhi 
+     pothe inko life raadhu ani enni conflicts(agam situations) vacchina i never gave up on you. Nen kanipiyadaniki 
+     weird ga undochu kaani kadhilisthe yediche position lo unna . ee janmaki nuvve naa sita,mamooty,naa bannu.
+     nuv,nenu 2 kids this is what  i dreamed of. but.. kaani until nen unathavaraku nuvvu matrame. naa mind lo 
+     its over , kaani naa heart lo nundi eppatiki polevu.I'm not moving on. I'm not letting you go. 
+     I may not be texting you but if you were to call me i would respond. 
+     I may not greet you when i wake up but you are the last person in my thoughts when i go to sleep. 
+     I can't deny that i miss you. I want to message you but i know you'll never respond. 
+     Yet, I will always be there for you. Even though we can't be together, my feelings for you keep 
+     getting stronger everyday. I'll miss you BANNU.Take care and be happy. 
+     Andharitho baane untana , evaritho em anatle , job final round dhaaka velthunna kaani interview lo 
+     matladalekapothunna nxt time nundi matladutha .inkaa enno unnai cheppadaniki 5 fingers tho thintana 
+     evaru 4 fingers tho thinna nuvve gurthu osthav, inka mummy thiduthandhi matladudu nerchuko ani, 
+     inka inkaa matladali ani unde kaani okay... sorry aa.  Manchiga unta nuv manchiga undu . jagrathane . 
+     <B>I LOVE YOU KANNAMMA❤</B><br>
+    nen evi antha evi chusi nuv edho impress avvali , ayyi nuv malli ravali ani 
+rayatle , itla kaali ga untte naak pichhoni ayithunna idhi kuda websites build cheyadam practice chesthunna
+adhe practice neemeedha pages create cheyadam some what happy. nuv eppudu eduvadhu 
+job tecchukovali ani restart chesthunna itu practice plus nuv rendu etu pokunda 
+practice lo nuv nuvve naaa practice .neek endhuku pamputhunna antte okka sari anni cheppukovali
+anipichindhe anthe. sorry. deeni nundi return lo elanti harsh msg lu 
+expect cheyatle , inka hurt chesi na ayye opika ledhe ,2 days cotinuous ga 
+work chesina ee 2 web pages kosam without sleep.anni chudu chaala kasthapada veetiki
+but edho expect chesi chesthalenu , sorry jagrathane.
+<br><b>good bye FUTURE WIFE🤗💘 jagratha/b></p>
+
+    </div>
+    <script>
+        function showGallery(galleryNumber) {
+            document.getElementById(`gallery${galleryNumber}`).style.display = 'block';
+        }
+
+        function closeGallery(galleryNumber) {
+            document.getElementById(`gallery${galleryNumber}`).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
